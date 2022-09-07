@@ -5,6 +5,7 @@ cesar lopez.  ficha 2558427
 ## (hoja de vida)[https://github.com/Cesar1520/agenda.git]
 ## dia 12/08/22
 ### progrmacion visual basic
+```
 sub sena ()
 
 nom = "luis"
@@ -16,10 +17,11 @@ nom = "maria"
 msgbox "el nombre es" & nom
 
 end sub
-
+```
+___
 ### trabajo 26 de agosto
 
-´´´´
+```
 
     Sub impuesto()
         a = Int(InputBox("valor a pagar anual"))
@@ -72,5 +74,33 @@ end sub
         End If
     End Sub
 
+```
 
-´´´´
+### Programa de impuesto con estructura Select Case
+
+```
+Sub sena()
+    ingreso = Int(InputBox("Escriba los ingresos anuales de la empresa"))
+        Select Case ingreso
+            Case 0 To 1000
+                MsgBox ("El impuesto a pagar es: " & ingreso)
+                Case 1001 To 10000
+                    impuesto = ((ingreso * 5) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case 10001 To 100000
+                    impuesto = ((ingreso * 10) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case 100001 To 1000000
+                    impuesto = ((ingreso * 15) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case 1000001 To 10000000
+                    impuesto = ((ingreso * 20) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case Else
+                    impuesto = ((ingreso * 25) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+        End Select
+End Sub
+```
+
+___
