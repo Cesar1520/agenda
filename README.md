@@ -5,7 +5,7 @@ cesar lopez.  ficha 2558427
 ## (hoja de vida)[https://github.com/Cesar1520/agenda.git]
 ## dia 12/08/22
 ### progrmacion visual basic
-´´´
+```
 sub sena ()
 
 nom = "luis"
@@ -17,11 +17,11 @@ nom = "maria"
 msgbox "el nombre es" & nom
 
 end sub
-´´´
+```
 ___
 ### trabajo 26 de agosto
 
-´´´
+```
 
     Sub impuesto()
         a = Int(InputBox("valor a pagar anual"))
@@ -74,11 +74,11 @@ ___
         End If
     End Sub
 
-´´´
+```
 
 ### Programa de impuesto con estructura Select Case
 
-´´´
+```
 Sub sena()
     ingreso = Int(InputBox("Escriba los ingresos anuales de la empresa"))
         Select Case ingreso
@@ -101,7 +101,6 @@ Sub sena()
                     MsgBox ("El impuesto a pagar es: " & impuesto)
         End Select
 End Sub
-
-´´´
+```
 
 ___
